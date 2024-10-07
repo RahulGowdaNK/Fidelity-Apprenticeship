@@ -1,17 +1,24 @@
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        linkedlist1 list = new linkedlist1();
+        Linkedlist linkedlist = new Linkedlist();
+        Scanner scanner = new Scanner(System.in);
 
-        list.insertAtEnd(10);
-        list.insertAtEnd(20);
-        list.insertAtBeginning(5);
-        list.insertAtIndex(1, 15);
-        System.out.println("First element;" + list.getFirst());
-        list.removeLast();
-        list.removeLast();
+        System.out.println("Enter number of elements: ");
+        int numelements = scanner.nextInt();
+        for (int i = 0; i < numelements; i++) {
+            System.out.println(("Enter element: ")+(i+1)+";");
+            int data=scanner.nextInt();
+            linkedlist.append(data);
+        }
+        System.out.println("linked list is: ");
+        linkedlist.display();
 
-        list.display();
-        System.out.println("Size of list: " + list.getSize());
+        System.out.println("Enter index to remove element: ");
+        int index = scanner.nextInt();
+        linkedlist.removeatindex(index);
+        System.out.println("linked list after removal is: ");
+        linkedlist.display();
     }
 }

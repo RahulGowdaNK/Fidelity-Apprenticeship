@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="eng";>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="vewiport" content="width=device-width,initail-scale=1.0">
+        <title>Ac maintainance service</title>
+        <link rel="stylesheet" href="Acstyles.css">
+
+    
+
+    </head>
+    <body>
+        <h1> Ac maintainance service Booking</h1>
+
+        <form action="Sucess.html" method="POST">
+            <label for ="customer name">Customer name:</label>
+            <input type="text" id="customer name=" name="customer name" placeholder="Enter Your name" required>
+
+            <label> Gender:</label>
+            <input type="radio" id ="male" name="Gender" value="male" required>
+            <label for="male" >Male</label>
+            <input type="radio" id ="female" name="Gender" value="female" required>
+            <label for="female" >Female</label>
+            
+
+            <label for="mobilenumber">Mobile Number:</label>
+            <input type="tel" id="mobilenumber" name="mobilenumber" placeholder="Enter your mobile number" pattern="[789][0-9]{9}" required>
+
+            <label for="email">Email ID :</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email " required>
+
+            <label for="Address" >Address:</label>
+            <textarea id="Address" name="address" rows="5" cols="25" placeholder="Enter your address" required> </textarea>
+
+            <label for="actype"> Ac Type:</label>
+            <input list="actypes" id="actype" name="actype" placeholder="select AC Type" required>
+            <datalist id="actypes">
+                <option value="split">
+                 <option value="Window">
+                    <option value="Centralised">
+                        <option value="Portable"></option>
+                    </option>
+                 </option>   
+                </option>
+            </datalist>
+
+            <label for ="serviceType">Service Type:</label>
+            <select id="serviceType" name="serviceType" required>
+                <option value="cleaning">Cleaning</option>
+                <option value="Repair">Repair</option>
+                <option value="Gas refill">Gas Refill</option>
+            </select>
+
+            <label for ="dateForAppointment">Date for Appointment</label>
+            <input type="date" id="dateForAppointment" name="dateForAppointment" required>
+
+            <label for ="yearlymaintainace">Yearly Maintainance:</label>
+            <input type="checkbox" id="yearlymaintainace" name="yearlymaintainace" value="yes">
+            <label for="yearlymaintainace">Select if required </label>
+
+            <label for="Duration">Duration from previous Service(months):</label>
+            <input type="range" id="Duration" name="Duration" min="0" max="6" step="1" title="o to 6 months">
+
+            <div class="form-button">
+                <input type="submit" id="submit" value="Submit">
+                <input type="reset" id="reset" value="Clear">
+            </div>
+
+
+            
+        </form>
+    </body>
+</html>
