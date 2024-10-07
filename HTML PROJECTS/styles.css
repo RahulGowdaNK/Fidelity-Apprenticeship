@@ -1,0 +1,61 @@
+/* Center align the heading*/
+h1 {
+    text-align: center; 
+    color: #FF00FF; /* Magenta color */
+    font-style: italic; /* Italic style */
+}
+
+/* Align the paragraph to the left */
+p {
+    text-align: left; /* Left aligned text */
+}
+
+/* Table styling */
+table {
+    margin-left: 35%; /* Center the table */
+    background-color: #F0F0F0; /* Light gray background */
+    width: 60%; /* Table width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+/* Table header */
+thead th {
+    background-color: #800000; /* Dark red background for header */
+    color: white; /* White text color */
+}
+
+/* Table data cells */
+td {
+    text-align: center; /* Center align for data cells */
+    font-weight: bold; /* Bold font for all data */
+}
+
+/* Specific classes and IDs for ratings */
+.exl {
+    background-color: #00ff00; /* Green background for Excellent */
+}
+
+.vgl {
+    background-color: #00ff00; /* Green background for Very Good */
+}
+
+.gol {
+    background-color: #ffff00; /* Yellow background for Good */
+}
+
+.avl {
+    background-color: #d3d3d3; /* Light gray background for Below Average */
+    color: #ffffff; /* White text color for Below Average */
+}
+
+.bal {
+    background-color: #110000; /* Dark maroon background for Average */
+    color: #ffffff; /* White text color for Average */
+}
+
+/* Caption styling */
+caption {
+    background-color: #ff0080; /* Pink background for caption */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold font for caption */
+}

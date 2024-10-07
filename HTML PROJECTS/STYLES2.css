@@ -1,0 +1,130 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "haeder"
+    "about"
+    "gallery"
+    "contact"
+    "footer";
+    gap:20px;
+}
+header{
+    font-size: 2.5em;
+    margin:0;
+    animation:fadeIn 2s ease-in-out;
+
+}
+.main-menu{
+    list-style: none;
+    padding:0;
+    margin: 20px 0 0;
+
+}
+.main-menu{
+    display:inline-block;
+    margin-right: 20px;
+
+}
+.main-menu{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+
+}
+.main-menuli a:hover{
+    color:#FFD700;
+
+}
+.about {
+    grid-area:about;
+    padding:20px;
+    background-color: white;
+    text-align: center;
+
+}
+.about h2{
+    margin-bottom: 10px;
+    font-size: 2em; 
+
+}
+.about p{
+    
+    font-size: 1.2em;
+    color:#666;
+}
+.gallery h2{
+    font-size:2em;
+    margin-bottom: 20px;
+
+}
+.grid-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+
+}
+.grid-item{
+    background-color: #afafaf;
+    padding: 20px;
+    border:1px solid #ddd;
+    text-align:center;
+    transition: transform 0.3s;
+
+}
+.grid-item:hover{
+    transform: scale(1.05);
+
+}
+.grid-item p{
+    margin-top: 10px;
+    font-size: 1.1em;
+    color:#333;
+}
+.contact{
+    grid-area: contact;
+    padding:20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.contact h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+.contact p{
+    font-size:1.1em;
+
+}
+footer{
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media(max-width:768px){
+    .container{
+        grid-template-columns: 1fr;
+
+    }
+    .main-menuli{
+        display: block;
+        margin-bottom: 10px;
+    }
+}
