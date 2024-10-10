@@ -1,0 +1,49 @@
+body{
+    background-color : #00FFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+h1{
+    font-size: 2.5em;
+
+}
+dd{
+    font-size: 1.5em;
+    color:#FF0000;
+
+
+}
+P[title]{
+    font-size: 1.7EM;
+    line-height: 1.5;
+
+}
+.reasons{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-style:italic;
+    line-height: 1.5;
+    color:#FF0000
+}
+
+#description01,#description07{
+    font-weight: bold;
+    color:#FF0000;
+
+
+}
+em{
+    font-weight: bold;
+    color:#FF0000;
+
+}
+
+em{
+    font-size: italic;
+    color: #ff4500;
+    font-weight: bold;
+}
+footer{
+    margin-top: 20px;
+}
